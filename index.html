@@ -836,18 +836,22 @@
     }
 
     .avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 18px;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
       background: var(--tint);
-      color: var(--bl);
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 22px;
-      font-weight: 700;
+      overflow: hidden;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 14px;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .member-card h3 {
